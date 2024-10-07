@@ -48,6 +48,11 @@
 5. Split
 6. FP Growth command
 
+### dtmnOkt1.txt (theory)
+1. association rule
+2. apriori
+3. freq itemsets
+
 ## Persiapan Quiz
 ### testAns.R
 1. Check columns for NA
