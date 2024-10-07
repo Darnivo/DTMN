@@ -1,0 +1,18 @@
+freq itemsets > collection of items / data that pops up often
+e.g {item1, i2,i3} > itemset
+
+support = how often an itemset shows up in a dataset
+
+association rule > rule which indicates a certain relationship between item 
+e,g {item 1, item 2} > {item 3}
+
+confidence = how often an assoc. rule is true
+
+
+apriori > algorithm to find frequent itemsets
+
+abbreviations:
+D > initial dataset
+Cm > Candidate itemset N
+Ln > freq. itemset N
+K > the amount of individual items in a given dataset
