@@ -6,7 +6,7 @@
 3. Read CSV
 4. Loop & Conditions
 
-## 17 Okt
+## 17 Sep
 ### Agger.R - Aggregating
 1. dplyr
 2. group by
