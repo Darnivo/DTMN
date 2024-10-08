@@ -1,5 +1,34 @@
 # Quiz ans
 
+### File (Movies.csv)
+| Attribute    | Data      | Type Description                                   |
+|--------------|-----------|----------------------------------------------------|
+| movieID      | Integer   | Unique ID in the Movies                            |
+| Title        | Character | The title of the movie                             |
+| Year         | Integer   | The release year of the movie                      |
+| IMDb Rating  | Numeric   | The IMDb rating of the movie                       |
+| Runtime Mins | Integer   | The runtime of the movie in minutes                |
+| Num Votes    | Integer   | The number of votes the movie received on IMDb     |
+| Directors    | Character | The directors of the movie                         |
+
+### Ex:
+| movieID | Title            | Title.Type | IMDb.Rating | Runtime..mins. | Year | Genres                     | Num.Votes | Directors   |
+|---------|------------------|------------|-------------|----------------|------|----------------------------|-----------|-------------|
+| 1       | Spider-Man       | movie      | 7.3         | 121            | 2002 | Action, Adventure, Sci-Fi  | 670777    | Sam Raimi   |
+| 2       | Spider-Man 2     | movie      | 7.3         | 127            | 2004 | Action, Adventure, Sci-Fi  | 528482    | Sam Raimi   |
+| 3       | Spider-Man 3     | movie      | 6.2         | 139            | 2007 | Action, Adventure, Sci-Fi  | 485814    | Sam Raimi   |
+| 4       | The Matrix       | movie      | 8.7         | 136            | 1999 | Action, Sci-Fi             | 1615984   | Lilly Wachowski, Lana Wachowski   |
+
+4
+The Matrix
+movie
+8.7
+136
+1999
+Action, Sci-Fi
+1615984
+Lilly Wachowski, Lana Wachowski
+
 ## 1. Data Visualization
 
 ### 1a. Show Distribution of IMDb Ratings based on IMDb Ratings.
@@ -100,6 +129,18 @@ pie(dur_dist,
 ![n3](https://raw.githubusercontent.com/Darnivo/DTMN/refs/heads/main/Q%20Res/n3.png)
 
 ## 2. FP analysis
+### File (Movies.csv & Transaction.csv)
+### Ex:
+| transactionID | movieID |
+|---------------|---------|
+| 1             | 1       |
+| 2             | 2       |
+| 3             | 3       |
+| 3             | 4       |
+| 3             | 5       |
+| 4             | 4       |
+| 4             | 5       |
+
 ```r
   library(arules)
 ```
