@@ -19,16 +19,6 @@
 | 3       | Spider-Man 3     | movie      | 6.2         | 139            | 2007 | Action, Adventure, Sci-Fi  | 485814    | Sam Raimi   |
 | 4       | The Matrix       | movie      | 8.7         | 136            | 1999 | Action, Sci-Fi             | 1615984   | Lilly Wachowski, Lana Wachowski   |
 
-4
-The Matrix
-movie
-8.7
-136
-1999
-Action, Sci-Fi
-1615984
-Lilly Wachowski, Lana Wachowski
-
 ## 1. Data Visualization
 
 ### 1a. Show Distribution of IMDb Ratings based on IMDb Ratings.
