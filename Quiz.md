@@ -38,9 +38,17 @@ hist(rtng_dist,
 ### 1b. Show the top 5 genres with the highest average IMDb rating that has more than 1000 votes
 
 #### Method 1 (With dplyr / tidyr)
+
+
 ```r
 names(mov_over1k)
+```
+> Aslab blunder because the genres were separated by a comma **and** a space as well, so for strsplit() use `sep = ", "` instead of `sep = "," `, or use this
+```r
+mov_over1k$Genres <- gsub(" ", "", mov_over1k$Genres)
+```
 
+```r
 by_genre <- mov_over1k %>%
   separate_rows(Genres, sep = ",") %>%
   group_by(Genres) %>%
@@ -83,22 +91,38 @@ barplot(v2_top5_genre,
         col = rainbow(5))
 ```
 
-#### Results
-| Rank | Genres     | avg_rating |
-|------|------------|------------|
-| 1    | Western    | 8.550000   |
-| 2    | History    | 7.642105   |
-| 3    | Biography  | 7.100000   |
-| 4    | Action     | 6.982353   |
-| 5    | Crime      | 6.842500   |
-| 6    | War        | 6.803448   |
-| 7    | Short      | 6.766667   |
-| 8    | Biography  | 6.733333   |
-| 9    | Animation  | 6.680435   |
-| 10   | Drama      | 6.632143   |
-
+#### Ex. Incorrect Results (33 Rows)
+Notice how theres `Biography` and ` Biography`
+| Rank | Genres      | avg_rating |
+|------|-------------|------------|
+| 1    | Western     | 8.550000   |
+| 2    | _History    | 7.642105   |
+| 3    | Biography   | 7.100000   |
+| 4    | _Action     | 6.982353   |
+| 5    | Crime       | 6.842500   |
+| 6    | _War        | 6.803448   |
+| 7    | _Short      | 6.766667   |
+| 8    | _Biography  | 6.733333   |
+| 9    | Animation   | 6.680435   |
+| 10   | _Drama      | 6.632143   |
 
 ![n2](https://raw.githubusercontent.com/Darnivo/DTMN/refs/heads/main/Q%20Res/n2.png)
+
+#### Ex. Correct Results (21 Rows)
+| Rank | Genres      | avg_rating |
+|------|-------------|------------|
+| 1    | History     | 7.642105   |
+| 2    | Biography   | 6.880000   |
+| 3    | War         | 6.803448   |
+| 4    | Short       | 6.766667   |
+| 5    | Western     | 6.711111   |
+| 6    | Musical     | 6.680435   |
+| 7    | Drama       | 6.610345   |
+| 8    | Adventure   | 6.576056   |
+| 9    | Animation   | 6.538630   |
+| 10   | Sport       | 6.426923   |
+
+![n2Cor](https://raw.githubusercontent.com/Darnivo/DTMN/refs/heads/main/Q%20Res/n2Cor.png)
 
 ### 1c. Show the number of movies by duration with 3 categories as below:
 `(< 90 mins,90-120 mins,> 120 mins)`
