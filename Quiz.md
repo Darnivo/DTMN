@@ -116,10 +116,10 @@ Notice how theres `Biography` and ` Biography`
 | 3    | War         | 6.803448   |
 | 4    | Short       | 6.766667   |
 | 5    | Western     | 6.711111   |
-| 6    | Musical     | 6.680435   |
-| 7    | Drama       | 6.610345   |
-| 8    | Adventure   | 6.576056   |
-| 9    | Animation   | 6.538630   |
+| 6    | Animation   | 6.680435   |
+| 7    | Musical     | 6.610345   |
+| 8    | Drama       | 6.576056   |
+| 9    | Adventure   | 6.538630   |
 | 10   | Sport       | 6.426923   |
 
 ![n2Cor](https://raw.githubusercontent.com/Darnivo/DTMN/refs/heads/main/Q%20Res/n2Cor.png)
