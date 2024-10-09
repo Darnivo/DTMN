@@ -93,6 +93,8 @@ barplot(v2_top5_genre,
 
 #### Ex. Incorrect Results (33 Rows)
 Notice how theres `Biography` and ` Biography`
+> Actual data has a space instead of `_`, its replaced here to make it easier to notice
+
 | Rank | Genres      | avg_rating |
 |------|-------------|------------|
 | 1    | Western     | 8.550000   |
@@ -107,7 +109,7 @@ Notice how theres `Biography` and ` Biography`
 | 10   | _Drama      | 6.632143   |
 
 ![n2](https://raw.githubusercontent.com/Darnivo/DTMN/refs/heads/main/Q%20Res/n2.png)
-
+<br><br>
 #### Ex. Correct Results (21 Rows)
 | Rank | Genres      | avg_rating |
 |------|-------------|------------|
@@ -123,6 +125,13 @@ Notice how theres `Biography` and ` Biography`
 | 10   | Sport       | 6.426923   |
 
 ![n2Cor](https://raw.githubusercontent.com/Darnivo/DTMN/refs/heads/main/Q%20Res/n2Cor.png)
+
+||||||||
+|-----------|------------|----------|----------|----------|-----------|----------|
+| History   | Biography  | War      | Short    | Western  | Animation | Musical  |
+| Drama     | Adventure  | Sport    | Crime    | Action   | Mystery   | Family   |
+| Sci-Fi    | Fantasy    | Comedy   | Thriller | Romance  | Music     | Horror   |
+
 
 ### 1c. Show the number of movies by duration with 3 categories as below:
 `(< 90 mins,90-120 mins,> 120 mins)`
